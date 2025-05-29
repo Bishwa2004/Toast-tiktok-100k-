@@ -7,7 +7,7 @@ import tempfile
 import re
 
 VIDEO_PATH = "TOAST.mp4"
-MODEL_SIZE = "medium"  # Options: tiny, base, small, medium, large-v2
+MODEL_SIZE = "base"  # Options: tiny, base, small, medium, large-v2
 DEVICE = "cpu"  # Use "cpu" for MacBook Air or no-GPU machines
 
 # Step 1: Transcribe video with real-time output

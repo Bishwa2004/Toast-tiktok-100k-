@@ -7,7 +7,7 @@ import os
 VIDEO_PATH = "TOAST.mp4"
  # Replace with your input video
 MODEL_SIZE = "medium"  # Options: tiny, base, small, medium, large-v2
-DEVICE = "cuda"  # Use "cpu" if you don't have a GPU
+DEVICE = "cpu"  # Use "cpu" if you don't have a GPU
 
 # Step 1: Transcribe video
 model = WhisperModel(MODEL_SIZE, device=DEVICE, compute_type="float16")

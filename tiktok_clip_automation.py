@@ -10,7 +10,8 @@ MODEL_SIZE = "medium"  # Options: tiny, base, small, medium, large-v2
 DEVICE = "cpu"  # Use "cpu" if you don't have a GPU
 
 # Step 1: Transcribe video
-model = WhisperModel(MODEL_SIZE, device=DEVICE, compute_type="float16")
+model = WhisperModel(MODEL_SIZE, device="cpu", compute_type="auto")
+
 segments, _ = model.transcribe(VIDEO_PATH, beam_size=5)
 
 # Step 2: Find highlight-worthy clips

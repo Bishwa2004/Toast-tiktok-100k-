@@ -4,7 +4,8 @@ from faster_whisper import WhisperModel
 import subprocess
 import os
 
-VIDEO_PATH = "vod.mp4"  # Replace with your input video
+VIDEO_PATH = "TOAST.mp4"
+ # Replace with your input video
 MODEL_SIZE = "medium"  # Options: tiny, base, small, medium, large-v2
 DEVICE = "cuda"  # Use "cpu" if you don't have a GPU
 
